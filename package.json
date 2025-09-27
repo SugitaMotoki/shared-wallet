@@ -5,7 +5,13 @@
   "main": "index.js",
   "scripts": {
     "front": "pnpm -F '@shared-wallet/frontend'",
-    "back": "pnpm -F '@shared-wallet/backend'"
+    "back": "pnpm -F '@shared-wallet/backend'",
+    "build:front": "pnpm front build",
+    "build:back": "pnpm back build",
+    "build": "pnpm run '/^build:.*/' --parallel",
+    "dev:front": "pnpm front dev",
+    "dev:back": "pnpm back start:dev",
+    "dev": "pnpm run '/^dev:.*/' --parallel"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,16 @@
+## サンプルリソース
+
+### 全取得
+GET http://localhost:4000/sample-resources
+
+### 一部取得
+GET http://localhost:4000/sample-resources/1
+
+### 追加
+POST http://localhost:4000/sample-resources
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "サンプル"
+}

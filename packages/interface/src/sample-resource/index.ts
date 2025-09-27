@@ -2,13 +2,13 @@
  * サンプルリソースを表すインターフェース
  */
 export interface SampleResource {
-    /**
-     * ID
-     */
-    id: number;
+  /**
+   * ID
+   */
+  id: number;
 
-    /**
-     * 名前
-     */
-    name: string;
+  /**
+   * 名前
+   */
+  name: string;
 }

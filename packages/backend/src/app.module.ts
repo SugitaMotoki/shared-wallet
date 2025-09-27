@@ -1,10 +1,10 @@
-import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { ConfigModule } from '@nestjs/config';
-import { join } from 'path';
-import { TypeOrmModule } from '@nestjs/typeorm';
-import { SampleResourcesModule } from './sample-resources/sample-resources.module';
+import { Module } from "@nestjs/common";
+import { AppController } from "./app.controller";
+import { AppService } from "./app.service";
+import { ConfigModule } from "@nestjs/config";
+import { join } from "path";
+import { TypeOrmModule } from "@nestjs/typeorm";
+import { SampleResourcesModule } from "./sample-resources/sample-resources.module";
 
 @Module({
   imports: [
@@ -25,9 +25,9 @@ import { SampleResourcesModule } from './sample-resources/sample-resources.modul
       autoLoadEntities: true,
       synchronize: true,
     }),
-    SampleResourcesModule
+    SampleResourcesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule { }
+export class AppModule {}

@@ -23,7 +23,7 @@
     "noFallthroughCasesInSwitch": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@interface/*": ["../interface/src/*"],
+      "@interface/*": ["../interface/src/*"]
     }
   }
 }

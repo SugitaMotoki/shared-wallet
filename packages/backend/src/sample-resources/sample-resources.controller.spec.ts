@@ -1,8 +1,8 @@
-import { Test, TestingModule } from '@nestjs/testing';
-import { SampleResourcesController } from './sample-resources.controller';
-import { SampleResourcesService } from './sample-resources.service';
+import { Test, TestingModule } from "@nestjs/testing";
+import { SampleResourcesController } from "./sample-resources.controller";
+import { SampleResourcesService } from "./sample-resources.service";
 
-describe('SampleResourcesController', () => {
+describe("SampleResourcesController", () => {
   let controller: SampleResourcesController;
 
   beforeEach(async () => {
@@ -11,10 +11,12 @@ describe('SampleResourcesController', () => {
       providers: [SampleResourcesService],
     }).compile();
 
-    controller = module.get<SampleResourcesController>(SampleResourcesController);
+    controller = module.get<SampleResourcesController>(
+      SampleResourcesController,
+    );
   });
 
-  it('should be defined', () => {
+  it("should be defined", () => {
     expect(controller).toBeDefined();
   });
 });

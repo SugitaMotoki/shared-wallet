@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
-    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "format": "prettier --write \"**/*.{js,ts,mjs,cjs,json}\"",
     "start": "nest start --env-file ../../.env",
     "start:dev": "nest start --watch --env-file ../../.env",
     "start:debug": "nest start --debug --watch --env-file ../../.env",

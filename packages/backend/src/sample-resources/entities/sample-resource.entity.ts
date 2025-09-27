@@ -1,10 +1,11 @@
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
+import type { SampleResource as ISampleResource} from "@interface/sample-resource";
 
 /**
  * サンプルリソースを表すクラス
  */
 @Entity()
-export class SampleResource {
+export class SampleResource implements ISampleResource {
     /**
      * ID
      */

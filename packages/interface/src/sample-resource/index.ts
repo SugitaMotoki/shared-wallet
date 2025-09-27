@@ -1,5 +1,5 @@
 /**
- * サンプルリソース
+ * サンプルリソースを表すインターフェース
  */
 export interface SampleResource {
     /**

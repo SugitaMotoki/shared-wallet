@@ -6,6 +6,7 @@
   "scripts": {
     "front": "pnpm -F '@shared-wallet/frontend'",
     "back": "pnpm -F '@shared-wallet/backend'",
+    "interface": "pnpm -F '@shared-wallet/interface'",
     "build:front": "pnpm front build",
     "build:back": "pnpm back build",
     "build": "pnpm run '/^build:.*/' --parallel",

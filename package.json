@@ -10,7 +10,13 @@
     "test": "pnpm --recursive run test",
     "lint": "pnpm --recursive run lint",
     "format": "pnpm --recursive run format",
-    "clean": "pnpm --recursive run clean"
+    "clean": "pnpm --recursive run clean",
+    "db:up": "docker-compose up -d postgres",
+    "db:down": "docker-compose down",
+    "db:logs": "docker-compose logs -f postgres",
+    "backend:dev": "pnpm --filter backend run start:dev",
+    "backend:build": "pnpm --filter backend run build",
+    "backend:test": "pnpm --filter backend run test"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",

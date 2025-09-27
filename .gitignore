@@ -45,6 +45,12 @@ coverage/
 
 # Docker
 .docker/
+docker-compose.override.yml
+
+# Backend specific
+backend/.env
+backend/dist/
+backend/coverage/
 
 # Cache
 .cache/

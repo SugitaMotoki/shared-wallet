@@ -1,0 +1,30 @@
+{
+  "name": "expense-sharing-app",
+  "version": "1.0.0",
+  "description": "複数人での使用を想定した割り勘+家計簿アプリケーション",
+  "private": true,
+
+  "scripts": {
+    "dev": "pnpm --parallel run dev",
+    "build": "pnpm --recursive run build",
+    "test": "pnpm --recursive run test",
+    "lint": "pnpm --recursive run lint",
+    "format": "pnpm --recursive run format",
+    "clean": "pnpm --recursive run clean",
+    "db:up": "docker-compose up -d postgres",
+    "db:down": "docker-compose down",
+    "db:logs": "docker-compose logs -f postgres",
+    "backend:dev": "pnpm --filter backend run start:dev",
+    "backend:build": "pnpm --filter backend run build",
+    "backend:test": "pnpm --filter backend run test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}

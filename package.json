@@ -9,9 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.17.0",
+  "packageManager": "pnpm@10.17.1",
   "engines": {
-    "pnpm": ">=10.17.0",
+    "pnpm": ">=10.17.1",
     "npm": "Use pnpm!",
     "yarn": "Use pnpm!"
   }

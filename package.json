@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "front": "pnpm -F '@shared-wallet/frontend'"
+    "front": "pnpm -F '@shared-wallet/frontend'",
+    "back": "pnpm -F '@shared-wallet/backend'"
   },
   "keywords": [],
   "author": "",

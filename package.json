@@ -1,0 +1,27 @@
+{
+  "name": "shared-wallet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "front": "pnpm -F '@shared-wallet/frontend'",
+    "back": "pnpm -F '@shared-wallet/backend'",
+    "interface": "pnpm -F '@shared-wallet/interface'",
+    "lint": "turbo lint",
+    "format": "turbo format",
+    "build": "turbo build",
+    "dev": "turbo dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.17.1",
+  "engines": {
+    "pnpm": ">=10.17.1",
+    "npm": "Use pnpm!",
+    "yarn": "Use pnpm!"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.8"
+  }
+}

@@ -7,19 +7,10 @@
     "front": "pnpm -F '@shared-wallet/frontend'",
     "back": "pnpm -F '@shared-wallet/backend'",
     "interface": "pnpm -F '@shared-wallet/interface'",
-    "lint:front": "pnpm front lint",
-    "lint:back": "pnpm back lint",
-    "lint": "pnpm '/^lint:.*/' --parallel",
-    "format:front": "pnpm front format",
-    "format:back": "pnpm back format",
-    "format:interface": "pnpm interface format",
-    "format": "pnpm '/^format:.*/' --parallel",
-    "build:front": "pnpm front build",
-    "build:back": "pnpm back build",
-    "build": "pnpm '/^build:.*/' --parallel",
-    "dev:front": "pnpm front dev",
-    "dev:back": "pnpm back start:dev",
-    "dev": "pnpm '/^dev:.*/' --parallel"
+    "lint": "turbo lint",
+    "format": "turbo format",
+    "build": "turbo build",
+    "dev": "turbo dev"
   },
   "keywords": [],
   "author": "",
@@ -29,5 +20,8 @@
     "pnpm": ">=10.17.1",
     "npm": "Use pnpm!",
     "yarn": "Use pnpm!"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.8"
   }
 }
